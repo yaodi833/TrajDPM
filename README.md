@@ -11,11 +11,13 @@ We provide the Singapore dataset, which can be downloaded from the following [li
 python main.py --name Singapore  --mode pretrain --pretrain_epochs 10
 ```
 
+The results of the pretrain will be placed in `./model/` (please create one manually if it doesn't exist)
+
 ## train
 
 ```shell
-python main.py --name Singapore  --mode train --epochs 2 --alternate
+python main.py --name Singapore  --mode train --epochs 10 --alternate
 ```
 
-
+The output of the trained encoder will be placed in `./embeddings/` (please create one manually if it doesn't exist)
 
